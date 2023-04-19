@@ -23,7 +23,7 @@ export const Common = ({ color }) => (
         opacity={0.2}
         blendFunction={THREE.AdditiveBlending}
       />
-      <Glitch delay={[3, 5]} duration={[1, 2]} strength={[0.1, 0.5]} ratio={3.8} />
+      <Glitch delay={[3, 5]} duration={[1, 2]} strength={[0.1, 0.5]} ratio={1.8} />
     </EffectComposer>
   </Suspense>
 )
