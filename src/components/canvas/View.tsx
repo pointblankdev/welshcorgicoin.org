@@ -5,6 +5,7 @@ import { OrbitControls, PerspectiveCamera, View as ViewImpl } from '@react-three
 import { Three } from '@/helpers/components/Three'
 import { EffectComposer, Bloom, Glitch, ChromaticAberration } from '@react-three/postprocessing'
 import * as THREE from 'three'
+import { GlitchMode } from 'postprocessing'
 
 const PerspectiveCameraX: any = PerspectiveCamera
 
@@ -23,7 +24,14 @@ export const Common = ({ color }) => (
         opacity={0.2}
         blendFunction={THREE.AdditiveBlending}
       />
-      <Glitch delay={[3, 5]} duration={[1, 2]} strength={[0.1, 0.5]} ratio={1.8} />
+      <Glitch
+        delay={[0.5, 20.5]}
+        duration={[0.1, 0.3]}
+        strength={[0.1, 10.2]}
+        mode={GlitchMode.SPORADIC} // try CONSTANT_MILD
+        active // toggle on/off
+        ratio={0.1}
+      />
     </EffectComposer>
   </Suspense>
 )
