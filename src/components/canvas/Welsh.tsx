@@ -41,7 +41,7 @@ export const Logo = ({ route = '/blob', ...props }) => {
       spinDuration.current = Math.random() * 0.5 + 0.5
       spinTime.current = 0
       scheduleNextSpin()
-    }, delay || (Math.random() * 15 + 5) * 1000)
+    }, delay || (Math.random() * 15 + 10) * 1000)
   }
 
   useEffect(() => {
