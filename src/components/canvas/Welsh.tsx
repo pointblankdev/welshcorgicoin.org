@@ -7,7 +7,8 @@ import { useEffect, useRef } from 'react'
 
 export const Logo = ({ route = '/blob', ...props }) => {
   const welsh = useGLTF('/welsh3.glb')
-  const { camera } = useThree()
+  const { gl, camera } = useThree()
+  const raycaster = new THREE.Raycaster()
   const initialPosition = useRef(new THREE.Vector3())
   const time = useRef(0)
   const spinTime = useRef(0)
@@ -20,14 +21,27 @@ export const Logo = ({ route = '/blob', ...props }) => {
     return t * t * t + 1
   }
 
-  const scheduleNextSpin = () => {
+  const handlePointerDown = (e) => {
+    const mouse = new THREE.Vector2(
+      (e.clientX / gl.domElement.clientWidth) * 2 - 1,
+      -(e.clientY / gl.domElement.clientHeight) * 2 + 1,
+    )
+    raycaster.setFromCamera(mouse, camera)
+    const intersects = raycaster.intersectObjects([welsh.scene], true)
+    if (intersects.length > 0) {
+      // Spin or scale the object
+      scheduleNextSpin(0.1)
+    }
+  }
+
+  const scheduleNextSpin = (delay = null) => {
     nextSpinTimeout.current = setTimeout(() => {
       const randomAxis = Math.random() > 0.5 ? 0 : 1
       spinAxis.current.set(randomAxis === 0 ? 1 : 0, randomAxis === 1 ? 1 : 0, 0)
       spinDuration.current = Math.random() * 0.5 + 0.5
       spinTime.current = 0
       scheduleNextSpin()
-    }, (Math.random() * 15 + 5) * 1000)
+    }, delay || (Math.random() * 15 + 5) * 1000)
   }
 
   useEffect(() => {
@@ -67,7 +81,7 @@ export const Logo = ({ route = '/blob', ...props }) => {
 
   return (
     <>
-      <primitive object={welsh.scene} {...props} />
+      <primitive object={welsh.scene} {...props} onPointerDown={handlePointerDown} />
     </>
   )
 }

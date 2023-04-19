@@ -1174,6 +1174,24 @@
     "@react-spring/shared" "~9.6.1"
     "@react-spring/types" "~9.6.1"
 
+"@react-spring/animated@~9.7.2":
+  version "9.7.2"
+  resolved "https://registry.yarnpkg.com/@react-spring/animated/-/animated-9.7.2.tgz#0119db8075e91d693ec45c42575541e01b104a70"
+  integrity sha512-ipvleJ99ipqlnHkz5qhSsgf/ny5aW0ZG8Q+/2Oj9cI7LCc7COdnrSO6V/v8MAX3JOoQNzfz6dye2s5Pt5jGaIA==
+  dependencies:
+    "@react-spring/shared" "~9.7.2"
+    "@react-spring/types" "~9.7.2"
+
+"@react-spring/core@^9.7.2", "@react-spring/core@~9.7.2":
+  version "9.7.2"
+  resolved "https://registry.yarnpkg.com/@react-spring/core/-/core-9.7.2.tgz#804ebadee45a6adff00886454d6f1c5d97ee219d"
+  integrity sha512-fF512edZT/gKVCA90ZRxfw1DmELeVwiL4OC2J6bMUlNr707C0h4QRoec6DjzG27uLX2MvS1CEatf9KRjwZR9/w==
+  dependencies:
+    "@react-spring/animated" "~9.7.2"
+    "@react-spring/rafz" "~9.7.2"
+    "@react-spring/shared" "~9.7.2"
+    "@react-spring/types" "~9.7.2"
+
 "@react-spring/core@~9.6.1":
   version "9.6.1"
   resolved "https://registry.npmjs.org/@react-spring/core/-/core-9.6.1.tgz#ebe07c20682b360b06af116ea24e2b609e778c10"
@@ -1189,6 +1207,11 @@
   resolved "https://registry.npmjs.org/@react-spring/rafz/-/rafz-9.6.1.tgz#d71aafb92b78b24e4ff84639f52745afc285c38d"
   integrity sha512-v6qbgNRpztJFFfSE3e2W1Uz+g8KnIBs6SmzCzcVVF61GdGfGOuBrbjIcp+nUz301awVmREKi4eMQb2Ab2gGgyQ==
 
+"@react-spring/rafz@~9.7.2":
+  version "9.7.2"
+  resolved "https://registry.yarnpkg.com/@react-spring/rafz/-/rafz-9.7.2.tgz#77e7088c215e05cf893851cd87ceb40d89f2a7d7"
+  integrity sha512-kDWMYDQto3+flkrX3vy6DU/l9pxQ4TVW91DglQEc11iDc7shF4+WVDRJvOVLX+xoMP7zyag1dMvlIgvQ+dvA/A==
+
 "@react-spring/shared@~9.6.1":
   version "9.6.1"
   resolved "https://registry.npmjs.org/@react-spring/shared/-/shared-9.6.1.tgz#4e2e4296910656c02bd9fd54c559702bc836ac4e"
@@ -1196,6 +1219,24 @@
   dependencies:
     "@react-spring/rafz" "~9.6.1"
     "@react-spring/types" "~9.6.1"
+
+"@react-spring/shared@~9.7.2":
+  version "9.7.2"
+  resolved "https://registry.yarnpkg.com/@react-spring/shared/-/shared-9.7.2.tgz#b8485617bdcc9f6348b245922051fb534e07c566"
+  integrity sha512-6U9qkno+9DxlH5nSltnPs+kU6tYKf0bPLURX2te13aGel8YqgcpFYp5Av8DcN2x3sukinAsmzHUS/FRsdZMMBA==
+  dependencies:
+    "@react-spring/rafz" "~9.7.2"
+    "@react-spring/types" "~9.7.2"
+
+"@react-spring/three@^9.7.2":
+  version "9.7.2"
+  resolved "https://registry.yarnpkg.com/@react-spring/three/-/three-9.7.2.tgz#2dd23e6e654fc57589cf6f89d6a809bc7f8a96b1"
+  integrity sha512-u7VAjc+az82PM+WOC2sTbZQLBixuN+0jX/oahzyjEnIds5eUJgaBqZRYAAEMupuzGGl8H3QqL3bFgBEQLq6ADQ==
+  dependencies:
+    "@react-spring/animated" "~9.7.2"
+    "@react-spring/core" "~9.7.2"
+    "@react-spring/shared" "~9.7.2"
+    "@react-spring/types" "~9.7.2"
 
 "@react-spring/three@~9.6.1":
   version "9.6.1"
@@ -1211,6 +1252,11 @@
   version "9.6.1"
   resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.6.1.tgz#913d3a68c5cbc1124fdb18eff919432f7b6abdde"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
+
+"@react-spring/types@~9.7.2":
+  version "9.7.2"
+  resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.7.2.tgz#e04dd72755d88b0e3163ba143ecd8ba78b68a5b0"
+  integrity sha512-GEflx2Ex/TKVMHq5g5MxQDNNPNhqg+4Db9m7+vGTm8ttZiyga7YQUF24shgRNebKIjahqCuei16SZga8h1pe4g==
 
 "@react-three/drei@^9.65.3":
   version "9.65.3"
@@ -1251,6 +1297,16 @@
     scheduler "^0.21.0"
     suspend-react "^0.0.8"
     zustand "^3.7.1"
+
+"@react-three/postprocessing@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@react-three/postprocessing/-/postprocessing-2.7.1.tgz#b042c974266ff3ce00139766fdd43b39aeaa65ae"
+  integrity sha512-FhmQB7INWKaecxq8u155cpbPWM2AM9SDazGmHMsW1r0IZy5aqsI1IWCxA+jJD1V7p6y0zXabssEqZ7JaANkiig==
+  dependencies:
+    postprocessing "^6.30.1"
+    react-merge-refs "^1.1.0"
+    screen-space-reflections "2.5.0"
+    three-stdlib "^2.8.11"
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -4039,6 +4095,11 @@ postcss@^8.0.9, postcss@^8.4.21, postcss@^8.4.4:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+postprocessing@^6.30.1:
+  version "6.30.2"
+  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.30.2.tgz#8cfb5561bfce63c983fae5d2cd8efa5bbd04fe6d"
+  integrity sha512-Vt77s5DkHyUOV4bmk10J46DHJLglBfIo9ARPI0o62UIAx9omANfuPJTKiLVoYlC1ApkV9y3ldBDipF3IldB7YA==
+
 potpack@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/potpack/-/potpack-1.0.2.tgz#23b99e64eb74f5741ffe7656b5b5c4ddce8dfc14"
@@ -4366,6 +4427,11 @@ schema-utils@^3.0.0, schema-utils@^3.1.1:
     "@types/json-schema" "^7.0.8"
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
+
+screen-space-reflections@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/screen-space-reflections/-/screen-space-reflections-2.5.0.tgz#2a6ea982da96f9c35f34a361b2555439f9fbb1f6"
+  integrity sha512-fWSDMhJS0xwD3LTxRRch7Lb9NzxsR66sCmtDmAA7i+OGnghUrBBsrha85ng7StnCBaLq/BKmZ97dLxWd1XgWdQ==
 
 semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
   version "6.3.0"
@@ -4755,7 +4821,7 @@ three-mesh-bvh@^0.5.23:
   resolved "https://registry.npmjs.org/three-mesh-bvh/-/three-mesh-bvh-0.5.23.tgz#08e5b629144b48b11acbd433519680e457d398ed"
   integrity sha512-nyk+MskdyDgECqkxdv57UjazqqhrMi+Al9PxJN6yFtx1CTW4r0eCQ27FtyYKY5gCIWhxjtNfWYDPVy8lzx6LkA==
 
-three-stdlib@^2.21.8:
+three-stdlib@^2.21.8, three-stdlib@^2.8.11:
   version "2.21.8"
   resolved "https://registry.npmjs.org/three-stdlib/-/three-stdlib-2.21.8.tgz#37b11b7f62d07b10742c212153b14db21433b3c6"
   integrity sha512-kqisiKvO4mSy59v5vWqBQSH8famLxp7Z51LxpMJI9GwDxqODaW02rhIwmjYDEzZWNFpjZpoDHVGbdpeHf8h3SA==
