@@ -29,7 +29,7 @@ export default function Page() {
         <div className='absolute z-10 flex w-full flex-col items-start justify-center p-4 text-center text-black md:w-2/5 md:text-left'>
           <p className='w-full uppercase'>Community Run</p>
           <h1 className='my-4 text-5xl font-bold leading-tight'>Welshcorgicoin</h1>
-          <p className='mb-8 text-2xl leading-normal'>The cutest token in the Stacks ecosystem.</p>
+          <p className='mb-8 text-2xl leading-normal'>The cutest token in the Bitcoin ecosystem.</p>
         </div>
 
         <div className='w-full text-center'>
